@@ -19,7 +19,7 @@ if uploaded_file is not None:
     st.image(image, caption='Uploaded Image', width=300)
     
     # Preprocess the image
-    img_size = 64
+    img_size = 128
     image = image.convert('L')  # convert to grayscale
     image = image.resize((img_size, img_size))
     img_array = np.array(image) / 255.0
